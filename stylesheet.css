@@ -8,13 +8,16 @@ body {
     margin: 0;
 }
 
-.page-header-container {
-    float: right;
-    margin: 50px 50px;
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    padding: 50px 50px;
 }
 
-.page-header-container a {
-    padding-left: 30px;
+.main-navigation a {
+    padding-left: 20px;
+    margin-top: 20px;
     font-family: 'muli';
     text-decoration: none;
     color: #000000;   
@@ -25,10 +28,30 @@ body {
     text-decoration-color: #D1781F;
 }
 
-.front-page-container {
+.heading-container {
     display: flex;
     flex-direction: row;
     margin: 0 50px 400px;
+}
+
+.portfolio-heading-container {
+    margin: 0 50px 90px;
+}
+
+.portfolio-heading {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 50px;
+}
+
+.my-work {
+    transition: transform .5s;
+    width: 33%;
+    text-align: center;
+}
+
+.my-work :hover {
+    transform: scale(1.2);
 }
 
 .front-page-title {
@@ -43,9 +66,25 @@ body {
     width: auto;
 }
 
-p {
+p, a {
     font-family: 'Hiragino Mincho ProN', 'Times New Roman', Times, serif;
-    font-size: 30px;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+#portfolio-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0px 30px;
+}
+
+.portfolio-grid-img {
+    border: #000000 1px solid;
 }
 
 .page-footer {
@@ -69,3 +108,4 @@ p {
     color: #ffffff;
     text-align: center;
 }
+
