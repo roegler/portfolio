@@ -12,21 +12,81 @@
 <body>
 
     <header class="page-header">
-        <a class="logo" href=index.html>
-            <img src="img/logo.svg" class="logo_img"></img>
+        <a class="logo" href="index.html">
+            <img src="img/logo.svg" class="logo_img" height="55"></img>
         </a>
-        <nav class="main-navigation">
-            <a href="index.html">HOME</a>
-            <a href="portfolio.html">PORTFOLIO</a>
-            <a href="about.html">ABOUT</a>
-            <a href="contact.html">CONTACT</a>
+        <nav id="header-items">
+            <div class="hamburger-container" onclick="hamburgerClicked(this)">
+                <div class="first-line"></div>
+                <div class="second-line"></div>
+                <div class="third-line"></div>
+            </div>
+
+            <div id="main-navigation">
+                <a href="index.html">HOME</a>
+                <a href="portfolio.html">PORTFOLIO</a>
+                <a href="about.html">ABOUT</a>
+                <a href="contact.html">CONTACT</a>
+                <a href="https://www.linkedin.com/in/mroegler/" target="_blank">
+                    <img class="linkedin_logo"
+                        src="img/linkedin-social-media-icon-design-template-vector-png_127069.png" alt="logo linkedid"
+                        height="20">
+                </a>
+            </div>
         </nav>
     </header>
+
+    <div class="about-me-container">
+        <div class="about-me-heading">
+            <h1 class="page-title">ABOUT <br> ME.</h1>
+            <p class="about-me-intro">I AM A CURIOUS PERSON, LOVE TO LEARN NEW THINGS<br>
+                AND THAT’S WHY I HAVE A LOT OF DIFFERENT KNOWLEDGE.<br>
+                I CAN CREATE CONTENT, DESIGN YOUR HOME<br>
+                OR DESIGN AND BUILD YOUR WEBSITE.
+            </p>
+        </div>
+
+        <div class="about-me-info">
+            <p>
+                I'm a content editor and interior designer at SixBondStreet.
+                A leading furniture and interior web shop in Oslo, Norway.
+                My core responsibility is maintaining and updating our web shop.
+                I’m also studying front end development at Noroff.<br>
+
+                <br>I studied at the Norwegian School of creativity (Norges Kreative Høyskole), where i completed my
+                degree in interior design in 2015.<br>
+
+                <br>Earlier I have worked in various businesses, but my focus has always been working with digital
+                platforms and design. Such as Magento, Wordpress and various social media managing tools.<br>
+
+                <br>I have also done some freelance work for minor design and eCommerce agencies.<br>
+
+                <br>Bragging list: Magento, Wordpress, Facebook Business Manager, Schedugram, Google (Analytics and
+                AdWords), Adobe InDesign, Adobe Photoshop, HTML, CSS and some JavaScript.<br>
+
+                <br>Currently studying front end development at Noroff. <br>
+
+                <br>Feel free to contact me for any inquiries.<br>
+            </p>
+            <a class="navigation-to-contact-page" href="contact.html">
+                <img src="img/marie_roegler_picture_portret.jpg" alt="Picture of Marie Røgler" height="330">
+                <button class="primary-button" type="button">CONTACT ME</button>
+            </a>
+        </div>
+
+        <a class="navigation_to_portfolio" href="portfolio.html">
+            <p>You’ll find my portfolio here.</p>
+            <img src="img/horrisontal_arrow.svg" alt="horrisontal arrow" height="150">
+        </a>
+
+    </div>
 
     <footer class="page-footer">
         <h3 class="subtitle-footer">Let me create the website you need.</h3>
         <small> © 2020 Marie Røgler. All rights reserved.<br>Design and development by: Marie Røgler </small>
     </footer>
+
+    <script src="hamburgerMenu.js"></script>
 </body>
 
 </html>

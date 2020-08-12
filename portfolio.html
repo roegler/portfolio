@@ -12,68 +12,108 @@
 <body>
 
     <header class="page-header">
-        <div class="logo">
-            <img src="img/logo.svg" href=index.html class="logo_img"></img>
-        </div>
-        <nav class="main-navigation">
-            <a href="index.html">HOME</a>
-            <a href="portfolio.html">PORTFOLIO</a>
-            <a href="about.html">ABOUT</a>
-            <a href="contact.html">CONTACT</a>
+        <a class="logo" href="index.html">
+            <img src="img/logo.svg" class="logo_img" height="55"></img>
+        </a>
+        <nav id="header-items">
+            <div class="hamburger-container" onclick="hamburgerClicked(this)">
+                <div class="first-line"></div>
+                <div class="second-line"></div>
+                <div class="third-line"></div>
+            </div>
+
+            <div id="main-navigation">
+                <a href="index.html">HOME</a>
+                <a href="portfolio.html">PORTFOLIO</a>
+                <a href="about.html">ABOUT</a>
+                <a href="contact.html">CONTACT</a>
+                <a href="https://www.linkedin.com/in/mroegler/" target="_blank">
+                    <img class="linkedin_logo"
+                        src="img/linkedin-social-media-icon-design-template-vector-png_127069.png" alt="logo linkedid"
+                        height="20">
+                </a>
+            </div>
         </nav>
     </header>
 
     <div class="portfolio-heading-container">
         <div class="portfolio-heading">
-            <h1 class="front-page-title">RØGLERS <br> PORTFOLIO.</h1>
-            <img src="img/big_arrow.svg" alt="big orange arrow" height="300px">
+            <h1 class="page-title">RØGLERS <br> PORTFOLIO.</h1>
+            <p>Have a look at some of my school projects. PS. Some of the projects are not responcive. </p>
+            <img class="arrow" src="img/big_arrow.svg" alt="big orange arrow" height="300">
         </div>
-    </div>  
+    </div>
 
     <div id="portfolio-grid">
-        
-            <a href="https://roegler.no/skole/home-decor/" class="my-work">
-                <img class="portfolio-grid-img" src="img/home_decor_utsnitt copy.jpg" alt="home_decor_screenshot" height="330">
-                <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
-            </a>
 
-            <a href="https://roegler.no/skole/ProjectExam_SpaceX/" class="my-work">
-                <img class="portfolio-grid-img" src="img/project_exam_spacex_utsnitt_002.jpg" alt="project_exam_spacex_screenshot" height="330">
-                <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
-            </a>
+        <a href="https://roegler.no/skole/home-decor/" target="_blank" class="my-work">
+            <img class="portfolio-grid-img" src="img/home_decor_utsnitt copy.jpg" alt="home_decor_screenshot"
+                height="330">
+            <p>Create and code a homepage with HTML and CSS for a Home Decor website. The main focus should be to
+                include colors and textures.</p>
+            <button class="secondary-button" type="button">EXPLORE WEBSITE</button>
+        </a>
 
-            <a href="https://roegler.no/skole/AW14-17_sience_museum/" class="my-work">
-                <img class="portfolio-grid-img" src="img/oslo_science_utsnitt_002.jpg" alt="oslo_science_museum_screenshot" height="330">
-                <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
-            </a>
-        
+        <a href="https://roegler.no/skole/ProjectExam_SpaceX/" target="_blank" class="my-work">
+            <img class="portfolio-grid-img" src="img/project_exam_spacex_utsnitt_002.jpg"
+                alt="project_exam_spacex_screenshot" height="330">
+            <p>Create a microsite for SpaceX to raise awareness about space program activity around the world.<br>
+                The site should appeal to a specific target audience and provide links to more information, live feeds
+                of launches, and so forth.</p>
+            <button class="secondary-button" type="button">EXPLORE WEBSITE</button>
+        </a>
 
-        
-            <a href="https://roegler.no/skole/Semester-project-2-board-game/" class="my-work">
-                <img class="portfolio-grid-img" src="img/board_game_utsnitt_002.jpg" alt="game of thrones board game" height="330">
-                <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
-            </a>
+        <a href="https://roegler.no/skole/AW14-17_sience_museum/" target="_blank" class="my-work">
+            <img class="portfolio-grid-img" src="img/oslo_science_utsnitt_002.jpg" alt="oslo_science_museum_screenshot"
+                height="330">
+            <p>This project exam includes design principles, project management, communication technology, and
+                developing with HTML/CSS.</p>
+            <button class="secondary-button" type="button">EXPLORE WEBSITE</button>
+        </a>
 
-            <a href="https://roegler.no/skole/NiceCream/" class="my-work">
-                <img class="portfolio-grid-img" src="img/nice_cream_utsnitt.jpg" alt="nice cream screenshot" height="330">
-                <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
-            </a>
+        <a href="https://roegler.no/skole/Semester-project-2-board-game/" target="_blank" class="my-work">
+            <img class="portfolio-grid-img" src="img/board_game_utsnitt_002.jpg" alt="game of thrones board game"
+                height="330">
+            <p>Building an online board game for Game of Thrones.<br>
+                The board game will be made using HTML, CSS and JavaScript.</p>
+            <button class="secondary-button" type="button">EXPLORE WEBSITE</button>
 
-            <a href="https://roegler.no/skole/Re-cycle/" class="my-work">
-                <img class="portfolio-grid-img" src="img/recycle_utsnitt.jpg" alt="re-cycle screenshot" height="330">
-                <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
-            </a>
-        
-            <a href="https://roegler.no/skole/StyleAnArticle/" class="my-work">
-                <img class="portfolio-grid-img" src="img/style_an_article_utsnitt.jpg" alt="style an article screenshot" height="330">
-                <h3>Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit.</h3>
-            </a>
+        </a>
 
-            <a href="https://roegler.no/skole/Letha/index.html" class="my-work">
-                <img class="portfolio-grid-img" src="img/letah_utsnitt.jpg" alt="letah screenshot" height="330">
-                <h3>Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit.</h3>
-            </a>
+        <a href="https://roegler.no/skole/NiceCream/" target="_blank" class="my-work">
+            <img class="portfolio-grid-img" src="img/nice_cream_utsnitt.jpg" alt="nice cream screenshot" height="330">
+            <p>A new ice cream company called Nice Cream has recently started.
+                They are aiming to sell custom-made ice cream to people through their website.<br>
+                Demonstrate understanding and competence of CSS to create mobile responsive websites through
+                implementation of a standard 3 column layout.
+            </p>
+            <button class="secondary-button" type="button">EXPLORE WEBSITE</button>
+        </a>
 
+        <a href="https://roegler.no/skole/Re-cycle/" target="_blank" class="my-work">
+            <img class="portfolio-grid-img" src="img/recycle_utsnitt.jpg" alt="re-cycle screenshot" height="330">
+            <p>Build an HTML website for a company called 'Re-cycle' that offer eco-friendly, guided cycling tours of a
+                town.<br>
+                Because their clients are travelling, it is very important that the website is mobile responsive.</p>
+            <button class="secondary-button" type="button">EXPLORE WEBSITE</button>
+        </a>
+
+        <a href="https://roegler.no/skole/StyleAnArticle/" target="_blank" class="my-work">
+            <img class="portfolio-grid-img" src="img/style_an_article_utsnitt.jpg" alt="style an article screenshot"
+                height="330">
+            <p>Design and style a webside with the pictures, animations and text you have received.<br>
+                You should use HTML and CSS to make the page representative. </p>
+            <button class="secondary-button" type="button">EXPLORE WEBSITE</button>
+        </a>
+
+        <a href="https://roegler.no/skole/Letha/index.html" target="_blank" class="my-work">
+            <img class="portfolio-grid-img" src="img/letah_utsnitt.jpg" alt="letah screenshot" height="330">
+            <p>Over the course of Interaction Design I´ve been researching, prototyping and eventually built a
+                website for the shoe company Letha.<br>
+                The site includes the principles learnt throughout this course and combine them with your skills in
+                HTML, CSS and JavaScript.</p>
+            <button class="secondary-button" type="button">EXPLORE WEBSITE</button>
+        </a>
     </div>
 
     <footer class="page-footer">
@@ -81,6 +121,7 @@
         <small> © 2020 Marie Røgler. All rights reserved.<br>Design and development by: Marie Røgler </small>
     </footer>
 
+    <script src="hamburgerMenu.js"></script>
 </body>
 
 </html>

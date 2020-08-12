@@ -1,6 +1,10 @@
 @font-face {
-    font-family: 'muli';
-    src: url(Fonts/muli.regular.ttf)
+    font-family: 'muli-light';
+    src: url('fonts/muli.light.ttf');
+
+    font-family:'muli-regular';
+    src: url('fonts/muli.regular.ttf');
+
 }
 
 body {
@@ -11,16 +15,54 @@ body {
 .page-header {
     display: flex;
     justify-content: space-between;
+    background-color: #F0E2D8;
+    position: fixed;
+    top: 0;
+    width: 100%;
     height: 70px;
-    padding: 50px 50px;
+    padding-top: 20px;
 }
 
-.main-navigation a {
-    padding-left: 20px;
-    margin-top: 20px;
-    font-family: 'muli';
+/* Hamburger menu */
+
+.hamburger-container {
+    display: none;
+    cursor: pointer;
+    margin-right: 30px;
+}
+
+.first-line, .second-line, .third-line {
+    width: 35px;
+    height: 5px;
+    background-color: #ffffff;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .first-line {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .second-line {
+    opacity: 0;
+}
+
+.change .third-line {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+
+#main-navigation a {
+    padding-right: 20px;
+    font-family: 'muli-regular';
     text-decoration: none;
     color: #000000;   
+}
+
+#main-navigation a:hover {
+    color: #D1781F;
 }
 
 .page-header-container a:hover {
@@ -28,10 +70,14 @@ body {
     text-decoration-color: #D1781F;
 }
 
+.logo_img {
+    padding-left: 20px;
+}
+
 .heading-container {
     display: flex;
     flex-direction: row;
-    margin: 0 50px 400px;
+    margin: 40px 50px 70px;
 }
 
 .portfolio-heading-container {
@@ -44,26 +90,125 @@ body {
     padding: 50px 50px;
 }
 
+.portfolio-heading p {
+    display: none;
+}
+
 .my-work {
     transition: transform .5s;
     width: 33%;
     text-align: center;
+    padding: 40px 10px;
 }
 
-.my-work :hover {
+.secondary-button {
+  background-color: #D1781F;
+  font-family: 'muli-regular';
+  border: none;
+  color: #000000;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 8px;
+}
+
+.primary-button {
+  background-color: #D1781F;
+  font-family: 'muli-regular';
+  border: none;
+  color: #000000;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 8px;
+}
+
+.primary-button:hover {
+    background-color: #F0E2D8;
+    border: 1px solid #D1781F;
+}
+
+.secondary-button:hover {
     transform: scale(1.2);
 }
 
-.front-page-title {
-    width: 50%;
-    font-family: 'muli';
+.about-me-container, .contact-me-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-me-heading, .contact-me-heading {
+    padding-left: 170px;
+}
+
+p.about-me-intro, .contact-me-intro {
+    color: #D1781F;
+}
+
+.about-me-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.about-me-info p {
+    width: 400px;
+    border: 1px solid #000000;
+    padding: 20px 20px;
+}
+
+.about-me-info img {
+    width: 330px;
+    margin: 20px 70px;
+    border: 1px solid #000000;
+}
+
+.navigation_to_portfolio {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.navigation_to_portfolio:hover {
+    transform: scale(1.2);
+}
+
+.navigation_to_portfolio img {
+    max-width: 40%;
+    margin: 30px 70px;
+}
+
+.navigation_to_portfolio p {
+    padding: 70px 20px;
+}
+
+.navigation-to-contact-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.navigation-to-contact-page .primary-button {
+    width: 40%;
+    text-align: center;
+    margin-left: 130px;
+}
+
+.page-title {
+    font-family: 'muli-regular';
     font-size: 100px;
+    padding-top: 30px;
 }
 
 .profil-picture {
     border: 2px solid #000000;
     margin-top: 150px;
     width: auto;
+    height: 400px;
 }
 
 p, a {
@@ -87,13 +232,56 @@ a {
     border: #000000 1px solid;
 }
 
+.contact-form-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 10%;
+}
+
+#contact-form {
+    width: 100%;
+}
+
+#fname, #lname, #email, #form-message {
+    padding: 2%;
+    width: 60%;
+}
+
+#form-message {
+    height: 100px;
+}
+
+#contact-form-btn {
+  width: 20%;
+  background-color: #D1781F;
+  font-family: 'muli-regular';
+  border: none;
+  color: #000000;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 8px;
+  margin-left: 10%;
+  margin-top: 3%;
+}
+
+#contact-form-btn:hover {
+    background-color: #F0E2D8;
+    border: 1px solid #D1781F;
+    border-radius: 8px;
+}
+
 .page-footer {
     display: flex;
     flex-direction: column;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
     margin-top: 50px;
     background-color: #000000;
-    width: 100%;
-    height: 300px;
 }
 
 .subtitle-footer {
@@ -104,8 +292,127 @@ a {
 }
 
 .page-footer small {
-    font-family: 'muli';
+    font-family: 'muli-regular';
     color: #ffffff;
     text-align: center;
+    padding-bottom: 20px;
+}
+
+@media only screen and (max-width: 793px) {
+
+    /* hamburger menu */
+
+    #main-navigation {
+        display: none;
+    }
+
+    .hamburger-container {
+        display: inline-block; 
+    }
+
+    #main-navigation.menu-mobile {
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        width: 100%;
+        left: 0;
+        top: 100px;
+        background: #F0E2D8;
+    }
+
+    #main-navigation.menu-mobile a {
+        padding: 20px 30px;
+
+    }
+
+    .page-title {
+        font-size: 45px;
+        font-family: 'muli-regular';
+        margin-bottom: 0;
+    }
+
+    .page-header {
+        width: 100%;
+        background-color: none;
+        position: relative;
+    }
+
+    p, a {
+        font-family: 'Hiragino Mincho ProN', 'Times New Roman', Times, serif;
+        font-size: 12px;
+    }
+
+    .my-work {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .profil-picture {
+        height: 250px;
+        margin-top: 70px;
+    }
+
+    .heading-container {
+        margin: 20px 25px 0px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .portfolio-heading-container {
+        margin: 0 50px;
+    }
+
+    .portfolio-heading {
+        padding: 0px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .portfolio-heading p {
+        display: block;
+    }
+
+    .arrow {
+        display: none;
+    }
+
+    .about-me-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .about-me-info img {
+        margin: 20px;
+    }
+
+    .about-me-info p {
+        width: 70%;
+        margin: 50px;
+        padding:0px;
+    }
+
+    .about-me-heading {
+        padding-left: 40px;
+        
+    }
+    .contact-me-heading {
+        padding-left: 10%;
+    }
+
+    .navigation_to_portfolio img {
+        margin-left: 25px;
+    }
+
+    .page-footer {
+        text-align: center;
+        width: 100%;
+    }
+
+    .page-footer h3 {
+        font-size: 30px;
+        }
 }
 
