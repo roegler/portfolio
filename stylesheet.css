@@ -318,11 +318,16 @@ a {
         left: 0;
         top: 100px;
         background: #F0E2D8;
+        border-bottom: 1px solid #D1781F;
     }
 
     #main-navigation.menu-mobile a {
         padding: 20px 30px;
 
+    }
+
+    .navigation-to-contact-page .primary-button {
+        margin-left: 111px;
     }
 
     .page-title {
@@ -390,8 +395,8 @@ a {
 
     .about-me-info p {
         width: 70%;
-        margin: 50px;
-        padding:0px;
+        margin: 32px;
+        padding: 20px;
     }
 
     .about-me-heading {
