@@ -152,7 +152,7 @@ p.about-me-intro, .contact-me-intro {
 .about-me-info {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .about-me-info p {
@@ -230,6 +230,7 @@ a {
 
 .portfolio-grid-img {
     border: #000000 1px solid;
+    width: 400px;
 }
 
 .contact-form-container {
@@ -377,6 +378,10 @@ a {
 
     .portfolio-heading p {
         display: block;
+    }
+    
+    .portfolio-grid-img {
+        width: 200px;
     }
 
     .arrow {

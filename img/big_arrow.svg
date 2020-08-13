@@ -1,9 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="282.185" height="310.309" viewBox="0 0 282.185 310.309">
+<svg xmlns="http://www.w3.org/2000/svg" width="282.176" height="311.31" viewBox="0 0 282.176 311.31">
   <g id="Group_2" data-name="Group 2" transform="translate(-1373.402 -415.5)">
-    <line id="Line_1" data-name="Line 1" y2="268" transform="translate(1512.5 415.5)" fill="none" stroke="#d1781f" stroke-width="2"/>
-    <g id="Group_1" data-name="Group 1" transform="translate(186 41)">
-      <line id="Line_2" data-name="Line 2" x1="138" y1="103" transform="translate(1188 581)" fill="none" stroke="#d1781f" stroke-width="2"/>
-      <line id="Line_3" data-name="Line 3" x2="103" y2="142" transform="translate(1469 581) rotate(90)" fill="none" stroke="#d1781f" stroke-width="2"/>
+    <line id="Line_1" data-name="Line 1" y2="269.453" transform="translate(1512.5 415.5)" fill="none" stroke="#d1781f" stroke-width="2"/>
+    <g id="Group_1" data-name="Group 1" transform="translate(1374 623.453)">
+      <line id="Line_2" data-name="Line 2" x1="137.5" y1="102.547" fill="none" stroke="#d1781f" stroke-width="2"/>
+      <path id="Path_1" data-name="Path 1" d="M144.5,0-.146,102.541" transform="translate(136.5)" fill="none" stroke="#d1781f" stroke-width="2"/>
     </g>
   </g>
 </svg>
