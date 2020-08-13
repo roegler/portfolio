@@ -24,7 +24,6 @@ body {
 }
 
 /* Hamburger menu */
-
 .hamburger-container {
     display: none;
     cursor: pointer;
@@ -52,7 +51,7 @@ body {
   -webkit-transform: rotate(45deg) translate(-8px, -8px);
   transform: rotate(45deg) translate(-8px, -8px);
 }
-
+/* End Hamburger menu*/
 
 #main-navigation a {
     padding-right: 20px;
@@ -302,7 +301,6 @@ a {
 @media only screen and (max-width: 793px) {
 
     /* hamburger menu */
-
     #main-navigation {
         display: none;
     }
@@ -326,6 +324,7 @@ a {
         padding: 20px 30px;
 
     }
+    /* End hamburger menu*/
 
     .navigation-to-contact-page .primary-button {
         margin-left: 111px;
@@ -339,7 +338,6 @@ a {
 
     .page-header {
         width: 100%;
-        background-color: none;
         position: relative;
     }
 
